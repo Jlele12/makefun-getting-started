@@ -149,6 +149,8 @@ US law requires them.
 - **Timebox your agent, but not your edits.** The transcript gate wants the entrypoint revised in at least two
   separate write/edit messages — so have your agent draft first, then tighten in a second pass. A file written
   once and never touched again can fail the revision check even when everything else is right.
+- **Re-run `check` after every push.** Each fix changes the commit, and the entry is judged at the sha you
+  submit — a green check against the exact commit is the cheapest insurance before `submit`.
 
 ## Bring your own humans
 
